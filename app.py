@@ -49,9 +49,9 @@ def to_csv_bytes(parts: dict) -> bytes:
 
 
 # --- Page config ---
-st.set_page_config(page_title="Parts List Extractor", page_icon="⚙️", layout="centered")
+st.set_page_config(page_title="Parts List Aggregator", page_icon="⚙️", layout="centered")
 
-st.title("⚙️ Parts List Extractor")
+st.title("⚙️ Parts List Aggregator")
 st.write("Upload a **Parts List** `.pdf` file to extract and aggregate quantities by type number.")
 
 uploaded_file = st.file_uploader("", type=["pdf"])
