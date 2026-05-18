@@ -15,7 +15,7 @@ def extract_parts(pdf_file) -> dict:
                 if not table or len(table) < 2:
                     continue
                 header = table[0]
-                if not any("Typnummer" in str(c) for c in header if c):
+                if not any(str(c) in ("Typnummer", "Typenummer") for c in header if c):
                     continue
                 for row in table[1:]:
                     if not row or len(row) < 4:
